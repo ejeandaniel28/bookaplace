@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;0,500;0,600;1,400&family=Outfit&family=Ultra&display=swap");
+* {
+  font-family: 'Mali', cursive,'Outfit', sans-serif , 'Ultra', serif;
+  background-color: #e1d2c3; }
+
+header {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 1px 0 1px; }
+  header img {
+    float: left;
+    width: 10rem; }
+  header nav {
+    display: flex;
+    justify-content: space-around; }
+    header nav ul {
+      list-style: none;
+      display: flex; }
+      header nav ul li {
+        font-weight: 600;
+        display: block;
+        margin: 0 1rem; }
+        header nav ul li a {
+          text-decoration: none;
+          color: black; }
+        header nav ul li :hover {
+          color: #69727a;
+          padding: 0.5rem;
+          background-color: #dcfffc;
+          border-radius: 1rem;
+          transition: all ease-out 100ms; }
+
+/*# sourceMappingURL=style.css.map */

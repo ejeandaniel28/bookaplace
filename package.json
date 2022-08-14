@@ -1,0 +1,11 @@
+{
+  "name": "homestay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/_style.scss:./style/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
