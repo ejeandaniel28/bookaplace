@@ -1,43 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;0,500;0,600;1,400&family=Outfit&family=Ultra&display=swap');
 
-$defaultColor: #69727a;
-$secondColor: #00a2bb;
+$defaultColor: #dedea8;
+$secondColor: #89d5e1;
 
-*{
+body{
+    margin: 0;
+    padding: 0;
     font-family: 'Mali', cursive,'Outfit', sans-serif , 'Ultra', serif;
-    background-color: #e1d2c3;
+    background-color: whitesmoke;
 }
 
-header{
+.entete{
     display: flex;
-    justify-content: space-around;
-    margin: 10px 1px 0 1px;
-    img{
-        float: left;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0.8rem dashed green;
+    .logo{
         width: 10rem;
     }
-    nav{
+    ul{
         display: flex;
-        justify-content: space-around;
-        ul{
+        li{
+            text-decoration: none;
+            margin: 0 0.5rem 0 0.5rem;
+            border: thick double green;
+            padding: 0.2rem 0.2rem ;
+            border-radius: 0.5rem;
+            background-color: $defaultColor;
+            font-weight: 500;
             list-style: none;
-            display: flex;
-            li{
-                font-weight: 600;
-                display: block;
-                margin: 0 1rem;
-                a{
-                    text-decoration: none;
-                    color: black;
-                }
-                :hover{
-                    color: $defaultColor;
-                    padding: 0.5rem;
-                    background-color: #dcfffc;
-                    border-radius: 1rem;
-                    transition: all ease-out 100ms;
-                }
+            a{
+                text-decoration: none;
             }
         }
     }
+
+}
+
+
+#slider{
+   h1{
+    text-align: center;
+   }
+   .slider{
+    margin: 0 0.5rem 0 0.5rem;
+    img{
+        display: block;
+        object-fit: cover;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0.5rem;
+        box-shadow: 0.2rem 0.2rem 1rem green;
+        .fa{
+            width: 40rem;
+        }
+    }
+   }
 }
