@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
-    <script src="https://kit.fontawesome.com/68ba24e46e.js" ></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>BOOKAPLACE</title>
 </head>
 <body class="contener">
@@ -15,28 +15,139 @@
             <ul>
                 <li class="liens"><a href="#Acceuil"> Acceuil </a></li>
                 <li class="liens"><a href="#Nos-chambres">Nos Chambres</a></li>
-                <li class="liens"><a href="#Contact">Contact</a></li>
+                <li class="liens"><a href="https://www.airbnb.fr/rooms/49169217" target="_blank">Réserver</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
 
+
+        <!-- PARTIE SLIDER -->
+
         <section id="slider"> 
-            <h1>La Villa Fage , Villa meublée de 4 chambres</h1>
+            <h1>La Villa Fage , Villa meublée de 4 chambres à Kribi (Cameroun)</h1>
             <div class="slider">
-                <img src="./images/villa-fage.webp" alt="">
-                <i class="fa-solid fa-angle-left"></i>
-                <i class="fa-solid fa-angle-left"></i>
+                <img src="./images/0.jpeg" alt="" id="featured">
+                <div class="tumbnails">
+                    <img src="./images/0.jpeg" alt="" class="thumbnail active">
+                    <img src="./images/1.jpeg" alt="" class="thumbnail">
+                    <img src="./images/2.jpeg" alt="" class="thumbnail">
+                    <img src="./images/3.jpeg" alt="" class="thumbnail">
+                    <img src="./images/4.jpeg" alt="" class="thumbnail">
+                    <img src="./images/5.jpeg" alt="" class="thumbnail">
+                    <img src="./images/6.jpeg" alt="" class="thumbnail">
+                    <img src="./images/7.jpeg" alt="" class="thumbnail">
+                    <img src="./images/8.jpeg" alt="" class="thumbnail">
+                    <img src="./images/9.jpeg" alt="" class="thumbnail">
+                    <img src="./images/10.jpeg" alt="" class="thumbnail">
+                </div>
             </div>
         </section>
 
-        <section>DESTINATIONS</section>
+        <!--  PARTIE DETAILS MAISON -->
+        <section id="Nos-chambres">
 
-        <section>APPARTEMENTS</section>
+            <h2 class="titreDetailsLogement"> Logement entier : logement ⸱ Chez Brenda </h2>
 
+            <!-- BOX DETAILS CHAMBRES -->
+
+            <div class="box">
+                <div class="boxdetailschambre">
+                    <p class="bedicon material-symbols-outlined">bed</p>
+                    <p class="bedNumber">Chambre 1</p>
+                    <p class="bedInfo">1 lit double</p>
+                </div>
+                <div class="boxdetailschambre">
+                    <p class="bedicon material-symbols-outlined">bed</p>
+                    <p class="bedNumber">Chambre 2</p>
+                    <p class="bedInfo">1 lit double</p>
+                </div>
+                <div class="boxdetailschambre">
+                    <p class="bedicon material-symbols-outlined">bed</p>
+                    <p class="bedNumber">Chambre 3</p>
+                    <p class="bedInfo">1 lit double</p>
+                </div>
+                <div class="boxdetailschambre">
+                    <p class="bedicon material-symbols-outlined">bed</p>
+                    <p class="bedNumber">Chambre 4</p>
+                    <p class="bedInfo">1 lit double</p>
+                </div>
+            </div>
+
+            <div class="descriptionlogement">
+                <h3>Ce que propose ce logement</h3>
+                <div class="descLogementLeft">
+                    <div class="boxicon">
+                        <span class="material-symbols-outlined icon">water</span>
+                        <p>Front de mer</p>
+                    </div>
+                    <div class="boxicon">
+                        <span class="material-symbols-outlined icon">local_parking</span>
+                        <p>Parking gratuit</p>
+                    </div>
+                    <div class="boxicon">
+                        <span class="material-symbols-outlined icon">tv_gen</span>
+                        <p>Televiseur</p>
+                    </div>
+                    <div class="boxicon">
+                        <span class="material-symbols-outlined icon">yard</span>
+                        <p>Jardin</p>
+                    </div>
+                    <div class="boxicon">
+                        <span class="material-symbols-outlined icon">outdoor_grill</span>
+                        <p>Barbecue</p>
+                    </div>
+                </div>
+                <div class="descLogementRight">
+                    <div class="boxicon">
+                        <span class="material-symbols-outlined icon">kitchen</span>
+                        <p>Cuisine</p>
+                    </div>
+                    <div class="boxicon">
+                        <span class="material-symbols-outlined icon">pets</span>
+                        <p>Annimaux accpete</p>
+                    </div>
+                    <div class="boxicon">
+                        <span class="material-symbols-outlined icon">balcony</span>
+                        <p>Cour de Jeux</p>
+                    </div>
+                    <div class="boxicon">
+                        <span class="material-symbols-outlined icon">villa</span>
+                        <p>Villa</p>
+                    </div>
+                    <div class="boxicon">
+                        <span class="material-symbols-outlined icon">beach_access</span>
+                        <p>10 Min de la plage</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ladescription">
+                <h3>À propos de ce logement</h3>
+                <p> La villa Fages est située au quartier résidentiel ngoye au lieu dit carrefour bakoko. À moins d’un kilomètre du centre ville et à 5 minutes en voiture de la plage</p>
+
+                <h4>Le logement</h4>
+                <p>La maison dispose d’une terrasse, une pelouse. Nous mettons à votre disposition une maison sécurisée et bien positionnée à Kribi avec des salles de bains propres disposant d’eau courante. N’étant pas loin de la plage, La nuit lorsque tout est bien calme, laissez vous bercer par le son des vagues ☺️🌊</p>
+                <p>Quartier sécurisé et calme. Restaurants et bar à proximité mais surtout avec l’avantage que les nuits sont calmes et paisibles, pas de nuisance sonore. À 1km du centre-ville et à 2km de la plage <br> Sans oublier un gardien de nuit pour votre sécurité.</p>
+
+                <h4>Accès des voyageurs</h4>
+                <p>Parking sécurisé et privé</p>
+
+                <h4>Autres remarques</h4>
+                <p>L’eau courante est disponible dans la maison <br> Douches spacieuses et belles <br>Cadre très convivial pour les voyages en famille, grande cour pour que les enfants puissent jouer en toute sécurité.</p>
+            </div>
+        </section>
     </main>
+    <!-- PIED DE PAGE-->
+    <footer class="footer">
+        <ul class="footerliste">
+            <li>Conctact: <a href="tel://2376777676776">2376777676776</a></li>
+            <li>Email: <a href="mailto:villafage@gmail.com">villafage@gmail.com</a></li>
+            <li>Reservation : <a href="https://www.airbnb.fr/rooms/49169217" target="_blank">Réserver ici</a></li>
+        </ul>
+    </footer>
 
     <footer></footer>
+    <script src="./index.js"></script>
 </body>
 </html>

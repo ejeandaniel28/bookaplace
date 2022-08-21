@@ -41,20 +41,194 @@ body{
 #slider{
    h1{
     text-align: center;
+    text-decoration: underline green;
+    text-transform: capitalize;
    }
    .slider{
     margin: 0 0.5rem 0 0.5rem;
-    img{
+    #featured{
         display: block;
         object-fit: cover;
-        max-width: 100%;
+        width: 100%;
+        max-width: 60rem;
+        max-height: 40rem;
         margin-left: auto;
         margin-right: auto;
         border-radius: 0.5rem;
         box-shadow: 0.2rem 0.2rem 1rem green;
-        .fa{
-            width: 40rem;
+        
+    }
+    .tumbnails{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 1rem 2rem 1rem 2rem;
+        .active{
+            opacity: 1 !important;
+        }
+        .thumbnail{
+            margin-top: 1rem;
+            width: 4rem;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            opacity: 0.5;
+            &:hover{
+                box-shadow: 0.1rem 0.2rem 0.1rem $secondColor;
+                scale: 110%;
+                opacity: 1;
+            }
         }
     }
+    .navigate{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
    }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  .arrow_back , .arrow_forward {
+    &:hover{
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+  }
+}
+
+#Nos-chambres{
+    display: flex;
+    flex-direction: column;
+    .titreDetailsLogement{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: space-between;
+        .boxdetailschambre{
+            display: flex;
+            width: 6rem;
+            height: 8rem;
+            flex-direction: column;
+            border: 0.1rem solid green;
+            border-radius: 2rem;
+            box-shadow: 1.5rem 0.8rem 4rem gray;
+            text-align: center;
+            margin-top: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            .bedicon{
+                font-size: 1.5rem;
+                font-weight: lighter;
+            }
+            .bedNumber{
+                font-size: 1rem;
+                margin-top: -1.3rem;
+            }
+            .bedInfo{
+                font-size: 1rem;
+                margin-top: -0.8rem;
+                font-style: oblique;
+            }
+
+        }
+    }
+}
+.descriptionlogement{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: space-around;
+
+    h3{
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        text-decoration: underline green;
+    }
+    .descLogementLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 2rem;
+        width: auto;
+        height: 14rem;
+        padding: 0 2rem;
+        border-radius: 4rem;
+        box-shadow: 0.4rem 1rem 4rem $secondColor;
+        border: 1px solid green;
+
+        .boxicon{
+            display: flex;
+            p{
+                margin-top: -0.3rem;
+                margin-left: 2rem;
+            }
+            .icon{
+                margin-top: -0.5rem;
+            }
+        }
+
+    }
+    
+    .descLogementRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 14rem;
+        white-space: normal;
+        word-break: break-all;
+        padding: 0 2rem;
+        border-radius: 4rem;
+        box-shadow: 0.4rem 1rem 4rem $secondColor;
+        border: 1px solid green;
+
+        .boxicon{
+            display: flex;
+            p{
+                margin-top: -0.3rem;
+                margin-left: 2rem;
+            }
+            .icon{
+                margin-top: -0.5rem;
+            }
+        }
+    }
+}
+
+.ladescription{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border: 0.1rem solid darkblue;
+    padding: 2rem;
+    border-radius: 5rem;
+}
+
+.footer{
+    height: 5rem;
+    background-color: $secondColor;
+    .footerliste{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: space-around;
+        height: 100%;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+
+        }
+    }
 }
